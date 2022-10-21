@@ -16,6 +16,7 @@ public class TP2_bieres_BRUN {
     public static void main(String[] args) {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
+        System.out.println(uneBiere);
         
         
         
@@ -24,9 +25,11 @@ public class TP2_bieres_BRUN {
         
         BouteilleBiere uneBiere2 = new BouteilleBiere("Chouffe",7.0 ,"Brasserie d'Achouffe") ;
         uneBiere2.lireEtiquette();
+        System.out.println(uneBiere2);
 
         BouteilleBiere uneBiere3 = new BouteilleBiere("La bête",7.0 ,"Castellan") ;
         uneBiere3.lireEtiquette();
+        System.out.println(uneBiere3);
         
         boolean var;
         
