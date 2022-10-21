@@ -17,7 +17,7 @@ public class TP2_bieres_BRUN {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
         System.out.println(uneBiere);
-        
+         
         
         
         
