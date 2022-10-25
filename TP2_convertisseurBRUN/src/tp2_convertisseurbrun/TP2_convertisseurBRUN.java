@@ -23,27 +23,47 @@ public class TP2_convertisseurBRUN {
         
         Convertisseur temperature = new Convertisseur();
         
-        System.out.println("Entrez l'unité de votre température en entrée: ");
-        int a = sc.nextInt ();
+        System.out.println("Entrez l'unité de votre température en entrée:\n1 pour Ferenheit \n2 pour Celcius\n3 pour Kelvin ");
+        int entrée = sc.nextInt ();
         
-        double result = temperature.CelciusVersKelvin (a);
+        System.out.println("Entrez l'unité que vous souhaitez :\n1 pour Ferenheit \n2 pour Celcius\n3 pour Kelvin ");
+        int sortie = sc.nextInt ();
+        
+        System.out.println("Entrez la valeur de votre température");
+        int c = sc.nextInt ();
+        
+        
+        if (entrée==2 && sortie==3){
+        double result = temperature.CelciusVersKelvin (c);
         System.out.println(result);
-        
+        }
        
-        double result1 = temperature.KelvinVersCelcius (b);
+        if (entrée==3 && sortie==2){
+        double result1 = temperature.KelvinVersCelcius (c);
         System.out.println(result1);
+        }
         
-        double result2 = temperature.FerenheitVersKelvin (40);
+        if (entrée==1 && sortie==3){
+        double result2 = temperature.FerenheitVersKelvin (c);
         System.out.println(result2);
+        }
         
-        double result3 = temperature.KelvinVersFerenheit (40);
+        if (entrée==3 && sortie==1){
+        double result3 = temperature.KelvinVersFerenheit (c);
         System.out.println(result3);
+        }
         
-        double result4 = temperature.CelciusVersFerenheit (40);
+        if (entrée==2 && sortie==1){
+        double result4 = temperature.CelciusVersFerenheit (c);
         System.out.println(result4);
+        }
         
-        double result5 = temperature.FerenheitVersCelcius (40);
+        if (entrée==1 && sortie==2){
+        double result5 = temperature.FerenheitVersCelcius (c);
         System.out.println(result5);
+        }
+        
+        
         
     
         
