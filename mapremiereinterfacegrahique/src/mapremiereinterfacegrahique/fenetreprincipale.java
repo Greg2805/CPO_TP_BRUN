@@ -78,6 +78,11 @@ public class fenetreprincipale extends javax.swing.JFrame {
         });
 
         jButton1.setText("valider");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         zonetexte.setColumns(20);
         zonetexte.setRows(5);
@@ -139,6 +144,17 @@ else {
     private void jPasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordField2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String rep=reponse.getText ();        // TODO add your handling code here:
+if (rep=="oui"){
+zonetexte.setText("c'est bien");
+}
+else {
+    zonetexte.setText("c'est bien");
+}
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
