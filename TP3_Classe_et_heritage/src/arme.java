@@ -8,5 +8,14 @@
  * @author grego
  */
 public class arme {
+    int attaque;
+    String nom;
+    
+    @Override
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = ("L'arme "+nom+" a un niveau d'attaque de "+attaque);
+return chaine_a_retourner;
+}
     
 }

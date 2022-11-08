@@ -8,5 +8,6 @@
  * @author grego
  */
 public class baton {
+    int age;    
     
 }

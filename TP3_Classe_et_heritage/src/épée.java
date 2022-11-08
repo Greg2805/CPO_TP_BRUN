@@ -8,5 +8,7 @@
  * @author grego
  */
 public class épée {
+    int indice;
+    
     
 }
