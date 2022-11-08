@@ -4,6 +4,7 @@
  */
 package tp3_classe_et_heritage;
 
+import Arme.*;
 import java.util.ArrayList;
 
 /**
@@ -44,7 +45,7 @@ public class TP3_Classe_et_heritage {
         System.out.println(n_arme.get(taille-1));
         
         
-       
+        
     }
     
 }

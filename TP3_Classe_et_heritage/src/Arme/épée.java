@@ -1,4 +1,6 @@
-package tp3_classe_et_heritage;
+package Arme;
+
+import Arme.arme;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,7 +16,13 @@ public class épée extends arme {
     
     public épée (String n, int i, int f){
         super(n, i);
-        indice = f;
+        if (f>100){
+            indice=100;
+            
+        }
+        else{
+            indice=f;
+        }
     }
     
     

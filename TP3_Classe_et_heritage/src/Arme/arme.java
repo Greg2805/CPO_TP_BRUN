@@ -1,4 +1,4 @@
-package tp3_classe_et_heritage;
+package Arme;
 
 import java.util.ArrayList;
 
@@ -19,8 +19,6 @@ public class arme {
     public arme (String n, int i){
         attaque = i;
         nom = n;
-        ArrayList<String> n_arme = new ArrayList<String>();
-        n_arme.add(n);
         
         
     }
