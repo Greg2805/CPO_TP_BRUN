@@ -7,6 +7,12 @@
  *
  * @author grego
  */
-public class Magicien {
+public class Magicien extends Personnages {
+    boolean cheval;    
     
+    public Magicien (String n, int pv, boolean a){
+        super(n , pv);
+        cheval=a;
+        
+    }
 }
