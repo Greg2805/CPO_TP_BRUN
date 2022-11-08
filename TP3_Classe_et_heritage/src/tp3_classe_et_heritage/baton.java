@@ -1,3 +1,5 @@
+package tp3_classe_et_heritage;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -7,8 +9,11 @@
  *
  * @author grego
  */
-public class épée {
-    int indice;
-    
+public class baton extends arme {
+    int age;    
+    public baton (String n, int i, int a){
+        super(n , i);
+        age=a;
+    }
     
 }

@@ -1,3 +1,5 @@
+package tp3_classe_et_heritage;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -10,6 +12,13 @@
 public class arme {
     int attaque;
     String nom;
+    
+    
+    public arme (String n, int i){
+        attaque = i;
+        nom = n;
+        
+    }
     
     @Override
 public String toString() {
