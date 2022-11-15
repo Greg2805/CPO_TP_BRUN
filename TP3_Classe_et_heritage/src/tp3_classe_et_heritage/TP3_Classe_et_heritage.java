@@ -64,6 +64,29 @@ public class TP3_Classe_et_heritage {
         int longueur2=taille2-1;
         for (int i=0 ; i<longueur2; i++){
             System.out.println(tab_p.get(i));
+            
+        
+        Guerrier g3 = new Guerrier("océane le troll", 2, false);
+        Magicien m3 = new Magicien ("jules le gobelin", 8, false);
+        baton baton10 = new baton ("branche", 5 , 5);
+        baton baton11 = new baton ("branche2", 5 , 5);
+        baton baton12 = new baton ("branche3", 5 , 5);
+        
+        épée épée10 = new épée ("kalisce", 5, 6);
+        épée épée11 = new épée ("kalisce2", 5, 6);
+        épée épée12 = new épée ("kalisce3", 5, 6);
+        
+        g3.ajouter_arme(épée10);
+        g3.ajouter_arme(épée11);
+        g3.ajouter_arme(baton10);
+        
+        m3.ajouter_arme(baton11);
+        m3.ajouter_arme(baton12);
+        m3.ajouter_arme(épée12);
+
+        
+        
+        
         
         
         

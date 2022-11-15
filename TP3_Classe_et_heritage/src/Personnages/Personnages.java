@@ -18,6 +18,7 @@ public class Personnages {
     int pdv;
     arme ajouter;
     ArrayList<arme> tab2 = new ArrayList<arme>();
+    arme arme_en_main;
     
     
     public void ajouter_arme (arme armedonnée){
@@ -29,12 +30,23 @@ public class Personnages {
         
     }
     
-    public String équiper_arme (arme àéquiper){
-    return ("arme ");
+    public void équiper_arme (String nomarme){
+        for (int i=0 ; i<tab2.size() ; i++){
+            if (tab2.get(1).getNom().equals(nomarme)){
+                System.out.println("L'arme à été trouvé et équipée");
+            
+        }
+        
+    
+    
+    
     }
+    }
+    
     public Personnages (String n, int pv){
         pdv = pv;
         nom = n;
+        arme_en_main=null;
         
         
     }
