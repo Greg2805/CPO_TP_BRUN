@@ -4,7 +4,11 @@
  */
 package tp3_classe_et_heritage;
 
+import Personnages.Personnages;
+import Personnages.Magicien;
+import Personnages.Guerrier;
 import Arme.*;
+
 import java.util.ArrayList;
 
 /**
@@ -41,11 +45,29 @@ public class TP3_Classe_et_heritage {
         int longueur=taille-1;
         for (int i=0 ; i<longueur; i++){
             System.out.println(n_arme.get(i));
+        
         }
+        Magicien magi1 = new Magicien ("Gandalf", 65, true);
         System.out.println(n_arme.get(taille-1));
+        Magicien magi2 = new Magicien ("Garcimor", 44, false);
+        Guerrier g1 = new Guerrier ("Conan", 78, false);
+        Guerrier g2 = new Guerrier ("Lannister", 45, true);
+        
+        ArrayList<Personnages> tab_p = new ArrayList<Personnages>();
+        tab_p.add(magi1);
+        tab_p.add(magi2);
+        tab_p.add(g1);
+        tab_p.add(g2);
+        
+        int taille2 =tab_p.size();
+        
+        int longueur2=taille2-1;
+        for (int i=0 ; i<longueur2; i++){
+            System.out.println(tab_p.get(i));
         
         
         
     }
     
+}
 }
