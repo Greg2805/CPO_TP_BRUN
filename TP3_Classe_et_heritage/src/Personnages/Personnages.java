@@ -33,6 +33,7 @@ public class Personnages {
     public void équiper_arme (String nomarme){
         for (int i=0 ; i<tab2.size() ; i++){
             if (tab2.get(1).getNom().equals(nomarme)){
+                arme_en_main=tab2.get(i);
                 System.out.println("L'arme à été trouvé et équipée");
             
         }
@@ -50,6 +51,15 @@ public class Personnages {
         
         
     }
-    
-    
+@Override
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = ("Le magicien "+nom+ " a "+pdv+ "point de vie et manie "+arme_en_main);
+//System.out.println (chaine_a_retourner);
+return(chaine_a_retourner);
 }
+}
+
+
+    
+

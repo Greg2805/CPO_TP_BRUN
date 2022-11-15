@@ -84,7 +84,10 @@ public class TP3_Classe_et_heritage {
         m3.ajouter_arme(baton12);
         m3.ajouter_arme(épée12);
 
-        
+        g3.équiper_arme("kalisce");
+        System.out.println("ici");
+        System.out.println(g3);
+        System.out.println("ici");
         
         
         

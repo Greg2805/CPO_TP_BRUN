@@ -25,17 +25,21 @@ public class Guerrier extends Personnages{
 public String toString() {
 String chaine_a_retourner;
 if (cheval == true){
-chaine_a_retourner = ("Le magicien "+nom+pdv+ "vie à cheval");
+chaine_a_retourner = ("Le Guerrier "+nom+ " a "+pdv+ "point de vie et est à cheval et mani "+arme_en_main);
 return chaine_a_retourner;
 }
 else {
-    chaine_a_retourner = ("Le magicien "+nom+pdv+ "vie à pieds");
+    chaine_a_retourner = ("Le Guerrier "+nom+ " a "+pdv+ "point de vie et est à pieds et mani "+arme_en_main);
 
    return chaine_a_retourner; 
 }
-    
-    
 }
+
+
+
+    
+    
+
 }
 
     
